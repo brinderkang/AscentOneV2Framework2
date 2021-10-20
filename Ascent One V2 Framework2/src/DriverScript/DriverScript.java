@@ -33,7 +33,7 @@ public class DriverScript {
 		
 		Xls_Reader xr=new Xls_Reader(System.getProperty("user.dir")+"\\src\\DriverFiles\\ProjectDriver.xlsx");
 		vProjectRowCnt=xr.getRowCount("Projects");
-		System.out.println("Total Project"+vProjectRowCnt);
+		System.out.println("Total Project: "+vProjectRowCnt);
 		for(int i=2;i<=vProjectRowCnt;i++)
 		{
 			 vRun=xr.getCellData("Projects", "Run", i);
